@@ -3,6 +3,7 @@ import './Page2-suite.css';
 import Header from './Header'
 const Page2Suite = () => {
   return (
+  
     <div className='background3 bg-background3 bg-cover bg-center h-screen w-screen flex'>
       <Header />
      <div className="flex flex-col items-center justify-center h-screen dark ml-7">
