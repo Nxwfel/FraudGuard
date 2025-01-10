@@ -1,6 +1,7 @@
 import React from 'react';
 import './Page2.css';
 import arrow from './arrow-right.png';
+import scroll from "./move-down.png";
 import Header from './Header'; 
 import { motion } from 'framer-motion';
 const Page2 = () => {
@@ -20,8 +21,8 @@ const Page2 = () => {
                 transition={{duration:2}}
                 delay={1}
                 >
-                <button className='mt-10 ml-96'>Explore More</button>
-                <a href=""><div className='absolute h-14 w-80 left-1/3 ml-52 -mt-14 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 top-5 absolute' /> </div></a>
+                <a href=""><div className='absolute h-14 w-80 left-1/3 ml-9  mt-14 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 top-5 absolute' /> </div></a>
+                <img src={scroll} className='absolute h-8 w-8 left-1/3 ml-44 mt-44 ' />
                 </motion.div>
             </div>
             <div className='flex flex-col'>

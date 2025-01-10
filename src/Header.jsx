@@ -2,8 +2,8 @@ import React from 'react';
 import {motion} from 'framer-motion';
 const Header = () => {
     return (
-        <motion.div><header className='fixed flex z-50'>
-        <h1 className=' pt-6 text-gray-200 font-textfont font-normal text-2xl hover:text-white transition '>FraudGuard</h1> 
+        <div><header className='fixed flex z-50'>
+        <h1 className='pl-9 pt-6 text-gray-200 font-textfont font-normal text-2xl hover:text-white transition '>FraudGuard</h1> 
         <ul className='w-screen ml-8 flex gap-14 pt-4'>
             <a href="/" className=' active:scale-95 p-3 hover:border-b-2'><li className='font-textfont text-gray-200'>Home</li></a>
             <a href="#/Page3" className=' active:scale-95 p-3 hover:border-b-2 mr-40'><li className='font-textfont text-gray-200 '>IsFraud?</li></a>
@@ -21,7 +21,7 @@ const Header = () => {
               className=' backdrop-blur-sm shadow-md mt-2 bg-white/5  w-fit h-fit p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 transition-transform hover:bg-white'><p className='font-textfont text-sky-600'>Signup</p></motion.div>
         </ul>
     </header>
-    </motion.div>
+    </div>
     );
 };
 
