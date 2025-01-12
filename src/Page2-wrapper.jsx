@@ -5,7 +5,6 @@ const Page2Wrapper = () => {
     return (
         <div>
             <Page2start />
-            <Page2suite />
         </div>
     );
 };
