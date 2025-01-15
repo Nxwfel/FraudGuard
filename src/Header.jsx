@@ -12,7 +12,7 @@ const Header = () => {
             initial={{opacity:0 , y:100}}
             whileInView={{opacity:1 , y:0}}
             transition={{duration:1.5}}
-             className='ml-96 right-0 mt-2 backdrop-blur-sm shadow-md bg-white/5  w-fit h-fit p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 transition-transform hover:bg-white'><a href="#/login"><p className='font-textfont text-sky-600'>Login</p></a></motion.div>
+             className='ml-96 right-0 mt-2 backdrop-blur-sm shadow-md bg-white/5  w-fit h-fit p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 transition-transform hover:bg-white'><a href="#/Login"><p className='font-textfont text-sky-600'>Login</p></a></motion.div>
              
              <motion.div
              initial={{opacity:0 , y:140}}

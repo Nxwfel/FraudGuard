@@ -13,7 +13,7 @@ function App() {
           <Route path="/Page1" element={<Page1 />} />
           <Route path="/" element={<Page2 />} />
           <Route path="/Page3" element={<Page2Suite />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/Login" element={<Login />} />
         </Routes>
       </HashRouter>
     </div>
