@@ -1,9 +1,9 @@
-import Page1 from './Page1';
-import Page2 from './Page2-start';
-import Page2Suite from './Page2-suite';
-import Login from './login';
+import Page1 from './Templates/Page1';
+import Page2 from './Templates/Page2-start';
+import Page2Suite from './Templates/Page2-suite';
+import Login from './Templates/login';
 import { BrowserRouter as Router,HashRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
+import './Style/App.css';
 
 function App() {
   return (

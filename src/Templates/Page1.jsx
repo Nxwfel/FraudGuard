@@ -1,8 +1,8 @@
-import './Page1.css';
-import Home from './home.png';
-import Main from './balance.png'; 
-import Settings from './settings.png';
-import Logout from './logout.png';
+import '../Style/Page1.css';
+import Home from '../Images/home.png';
+import Main from '../Images/balance.png'; 
+import Settings from '../Images/settings.png';
+import Logout from '../Images/logout.png';
 import { Link } from 'react-router-dom';
 function Page1() {
   return (

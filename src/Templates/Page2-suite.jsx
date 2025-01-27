@@ -1,6 +1,6 @@
 import React from 'react';
-import './Page2-suite.css';
-import Header from './Header'
+import '../Style/Page2-suite.css';
+import Header from '../Templates/Header'
 const Page2Suite = () => {
   return (
   
