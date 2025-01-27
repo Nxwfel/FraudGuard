@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'background': "url('./src/Images/background.jpg')",
-        'background2': "url('./src/Images/background2.jpg')",
-        'background3': "url('./src/Images/background3.jpg')",
+        'background': "url('./Images/background.jpg')",
+        'background2': "url('./Images/background2.jpg')",
+        'background3': "url('./Images/background3.jpg')",
       },
 
       fontFamily:{
