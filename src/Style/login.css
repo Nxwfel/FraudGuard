@@ -1,39 +1,91 @@
-.inputGroup {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 1em 0 1em 0;
-  max-width: 190px;
+.group {
   position: relative;
-}
-
-.inputGroup input {
-  font-size: 100%;
-  padding: 0.8em;
+ }
+ 
+ .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+ }
+ 
+ .input:focus {
   outline: none;
-  border: 2px solid rgb(200, 200, 200);
-  background-color: transparent;
-  border-radius: 20px;
-  width: 100%;
-}
-
-.inputGroup label {
-  font-size: 100%;
+ }
+ 
+ label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
   position: absolute;
-  left: 0;
-  padding: 0.8em;
-  margin-left: 0.5em;
   pointer-events: none;
-  transition: all 0.3s ease;
-  color: rgb(100, 100, 100);
-}
-
-.inputGroup :is(input:focus, input:valid)~label {
-  transform: translateY(-50%) scale(.9);
-  margin: 0em;
-  margin-left: 1.3em;
-  padding: 0.4em;
-  background-color: #e8e8e8;
-}
-
-.inputGroup :is(input:focus, input:valid) {
-  border-color: rgb(150, 150, 200);
-}
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+ }
+ 
+ .input:focus ~ label, .input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264AE;
+ }
+ 
+ .bar {
+  position: relative;
+  display: block;
+  width: 200px;
+ }
+ 
+ .bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #5264AE;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+ }
+ 
+ .bar:before {
+  left: 50%;
+ }
+ 
+ .bar:after {
+  right: 50%;
+ }
+ 
+ .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+  width: 50%;
+ }
+ 
+ .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+ }
+ 
+ .input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+ }
+ 
+ @keyframes inputHighlighter {
+  from {
+   background: #5264AE;
+  }
+ 
+  to {
+   width: 0;
+   background: transparent;
+  }
+ }
