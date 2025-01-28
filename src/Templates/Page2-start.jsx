@@ -45,7 +45,7 @@ const Page2 = () => {
                 </div>
              <div className='absolute bottom-10 left-4'>
                 <TrueFocus 
-                    sentence="Nawfel Halilou."
+                    sentence="Nawfel Ameur"
                     manualMode={false}
                     blurAmount={5}
                     borderColor="#2CA6E2"
