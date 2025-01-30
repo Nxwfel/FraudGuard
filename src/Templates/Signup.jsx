@@ -2,7 +2,7 @@ import React from 'react';
 import TextPressure from '../Animation/TextPressure';
 import { motion } from 'framer-motion';
 
-const Login = () => {
+const Signup = () => {
   return (
     <motion.div
     initial={{ opacity: 0 }}
@@ -27,7 +27,7 @@ const Login = () => {
           />
         </div>
         <div className='h-3/5 w-96 bg-transparent backdrop-blur-md border-2 border-zinc-600   mt-28 relative mr-auto ml-auto rounded-xl'>
-          <h1 className='font-textfont2 text-4xl text-white tracking-widest mt-5 text-center'>Login</h1>
+          <h1 className='font-textfont2 text-4xl text-white tracking-widest mt-5 text-center'>Signup</h1>
           
           <form>
     <div class="mb-6 p-3 pb-2">
@@ -47,4 +47,4 @@ const Login = () => {
     </motion.div>
   );
 };
-export default Login;
+export default Signup;
