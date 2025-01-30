@@ -8,6 +8,11 @@ import { motion } from 'framer-motion';
 const Page2 = () => {
     
     return (
+        <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1.3 }}> 
         <div className='background2 bg-background2 bg-cover bg-center h-screen w-screen'>
            <Header />
             <div className='flex flex-col relative justify-center items-center text-center top-44 font-textfont text-gray-200 font-light'>
@@ -54,6 +59,7 @@ const Page2 = () => {
                     />
               </div>
         </div>
+        </motion.div>
     );
 };
 

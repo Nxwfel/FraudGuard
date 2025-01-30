@@ -1,9 +1,15 @@
 import React from 'react';
 import '../Style/Page2-suite.css';
 import Header from '../Templates/Header'
+import { motion } from 'framer-motion';
 const Page2Suite = () => {
   return (
-  
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1.3 }}
+    >
     <div className='background3 bg-background3 bg-cover bg-center h-screen w-screen flex'>
       <Header />
      <div className="flex flex-col items-center justify-center h-screen dark ml-7">
@@ -52,6 +58,7 @@ const Page2Suite = () => {
     </div>
     </div>
         </div>
+    </motion.div>
   );
 };
 

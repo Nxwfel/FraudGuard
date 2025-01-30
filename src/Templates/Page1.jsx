@@ -4,9 +4,14 @@ import Main from '../Images/balance.png';
 import Settings from '../Images/settings.png';
 import Logout from '../Images/logout.png';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 function Page1() {
   return (
-
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 1.3 }}> 
     <div className='background bg-background bg-cover bg-center h-screen w-screen'>
       <header className='flex items-center'>
         <h1 className='ml-10 mt-7 text-gray-200 font-textfont font-normal text-2xl hover:text-white transition '>FraudGuard</h1>  
@@ -58,6 +63,7 @@ function Page1() {
               </div>
             </div>
     </div>
+    </motion.div>
   );
 }
 

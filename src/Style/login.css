@@ -1,62 +1,39 @@
-.form__group {
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 190px;
   position: relative;
-  padding: 20px 0 0;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 20px;
   width: 100%;
-  max-width: 180px;
 }
 
-.form__field {
-  font-family: inherit;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #9b9b9b;
-  outline: 0;
-  font-size: 17px;
-  color: #fff;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
-}
-
-.form__field::placeholder {
-  color: transparent;
-}
-
-.form__field:placeholder-shown ~ .form__label {
-  font-size: 17px;
-  cursor: text;
-  top: 20px;
-}
-
-.form__label {
+.inputGroup label {
+  font-size: 100%;
   position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #9b9b9b;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
   pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(100, 100, 100);
 }
 
-.form__field:focus {
-  padding-bottom: 6px;
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, #116399, #38caef);
-  border-image-slice: 1;
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
 }
 
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #38caef;
-  font-weight: 700;
-}
-
-/* reset input */
-.form__field:required, .form__field:invalid {
-  box-shadow: none;
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
 }
