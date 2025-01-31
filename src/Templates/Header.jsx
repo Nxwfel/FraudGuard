@@ -7,7 +7,7 @@ const Header = () => {
         <ul className='w-screen ml-8 flex gap-14 pt-4'>
             <a href="/" className=' active:scale-95 p-3 hover:border-b-2'><li className='font-textfont text-gray-200'>Home</li></a>
             <a href="#/Page3" className=' active:scale-95 p-3 hover:border-b-2'><li className='font-textfont text-gray-200 '>IsFraud?</li></a>
-            <a href="" className=' active:scale-95 p-3 hover:border-b-2 mr-22'><li className='font-textfont text-gray-200 '>About</li></a>
+            <a href="#/About" className=' active:scale-95 p-3 hover:border-b-2 mr-22'><li className='font-textfont text-gray-200 '>About</li></a>
         
             <motion.div
             initial={{opacity:0 , y:100}}
