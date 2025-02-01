@@ -12,7 +12,7 @@ const Page2Suite = () => {
     >
     <div className='background3 bg-background3 bg-cover bg-center h-screen w-screen flex'>
       <Header />
-     <div className="flex flex-col items-center justify-center h-screen dark ml-7">
+     <div className="flex flex-col items-center justify-center h-screen dark w-screen">
   <div className="w-full max-w-md backdrop-blur-sm bg-white/5 rounded-lg shadow-md p-6">
     <h2 className="text-2xl font-textfont2 text-gray-200 mb-4">IsFraud?</h2>
     
