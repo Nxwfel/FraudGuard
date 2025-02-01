@@ -33,9 +33,9 @@ const Page2Suite = () => {
   </div>
 </div>
 
-<div className='flex mt-72 ml-60'><span className='font-textfont2 text-9xl absolute text-sky-600'>Is</span> <span className='font-textfont2 text-9xl absolute text-sky-600'>Isn't</span><span className='font-textfont2 text-9xl text-gray-200 ml-52'> Fraud</span></div>
+<div className='flex mt-72 ml-32 mr-44'><span className='font-textfont2 text-9xl absolute text-sky-600'>Is</span> <span className='font-textfont2 text-9xl absolute text-sky-600'>Isn't</span><span className='font-textfont2 text-9xl text-gray-200 ml-52'> Fraud</span></div>
 
-      <div className="loader absolute right-96 top-0 mt-80 hidden">
+      <div className="loader absolute right-96 top-0 mt-80 ">
     <div className="box box-1">
         <div className="side-left"></div>
         <div className="side-right"></div>

@@ -2,7 +2,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 const Header = () => {
     return (
-        <div className='w-screen min-h-fit'><header className='fixed flex z-50'>
+        <div><header className='fixed flex z-50'>
         <h1 className='pl-9 pt-6 text-gray-200 font-textfont font-normal text-2xl hover:text-white transition '>FraudGuard</h1> 
         <ul className='w-screen ml-8 flex gap-14 pt-4'>
             <a href="/" className=' active:scale-95 p-3 hover:border-b-2'><li className='font-textfont text-gray-200'>Home</li></a>
