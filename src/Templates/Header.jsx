@@ -18,7 +18,7 @@ const Header = () => {
              initial={{opacity:0 , y:140}}
              whileInView={{opacity:1 , y:0}}
              transition={{duration:1.5}}
-              className='relative mr-72 backdrop-blur-sm shadow-md mt-2 bg-white/5  w-fit h-fit p-2 pr-4 pl-4 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><a href="#/Signup"><p className='font-textfont text-sm text-sky-600'>Signup</p></a></motion.div>
+              className='relative mr-72 -ml-5 backdrop-blur-sm shadow-md mt-2 bg-white/5  w-fit h-fit p-2 pr-4 pl-4 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><a href="#/Signup"><p className='font-textfont text-sm text-sky-600'>Signup</p></a></motion.div>
               
         </ul>
     </header>
