@@ -36,13 +36,13 @@ const Page2 = () => {
                 transition={{duration:2}}
                 delay={1}
                 >
-                <div className='flex items-center justify-center gap-11'>
+                <div className='flex max-md:flex-col max-md:gap-5 items-center justify-center gap-11'>
                 <a href="#/Page3"><motion.div
                 initial={{opacity:0 , y:100}}
                 whileInView={{opacity:1 , y:0}}
                 transition={{duration:1.5}}
-                className='relative z-50 h-14 w-52 right-0 mt-5 justify-center items-center text-center backdrop-blur-sm shadow-md bg-white/5 p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><p className='text-center relative top-2 left-auto right-auto font-textfont text-sky-600'>Try it Now!</p></motion.div></a>
-                <a href=""><div className='relative z-50 h-14 w-80 right-auto left-auto mt-5 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute z-50 top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 top-5 absolute' /> </div></a>
+                className='relative z-50 max-md:h-9 max-md:w-32 h-14 w-52 right-0 mt-5 justify-center items-center text-center backdrop-blur-sm shadow-md bg-white/5 p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><p className='text-center relative top-2 left-auto right-auto font-textfont text-sky-600 max-md:top-0 max-md:text-sky-300'>Try it Now!</p></motion.div></a>
+                <a href="#/Page1"><div className='relative z-50 max-md:h-11 max-md:w-62 h-14 w-80 right-auto left-auto mt-5 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute z-50 max-md:top-3 top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 max-md:top-4 top-5 absolute' /> </div></a>
                 </div></motion.div>
             </div>
                 <div className='flex flex-col w-screen h-fit justify-center items-center'>

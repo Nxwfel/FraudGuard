@@ -10,9 +10,9 @@ const Page2Suite = () => {
     exit={{ opacity: 0 }}
     transition={{ duration: 1.3 }}
     >
-    <div className='background3 bg-background3 bg-cover bg-center h-screen w-screen flex'>
+    <div className='background3 bg-background3 bg-cover bg-center h-screen w-screen flex max-lg:flex-col '>
       <Header />
-     <div className="flex flex-col items-center justify-center h-screen dark w-screen">
+     <div className="flex flex-col items-center justify-center h-screen dark w-screen max-lg:mt-20">
   <div className="w-full max-w-md backdrop-blur-sm bg-white/5 rounded-lg shadow-md p-6">
     <h2 className="text-2xl font-textfont2 text-gray-200 mb-4">IsFraud?</h2>
     
@@ -33,9 +33,9 @@ const Page2Suite = () => {
   </div>
 </div>
 
-<div className='flex mt-72 ml-32 mr-44'><span className='font-textfont2 text-9xl absolute text-sky-600'>Is</span> <span className='font-textfont2 text-9xl absolute text-sky-600'>Isn't</span><span className='font-textfont2 text-9xl text-gray-200 ml-52'> Fraud</span></div>
+<div className='flex mt-72 ml-32 mr-44 max-lg:mt-11 max-lg:mr-auto max-lg:ml-auto '><span className='font-textfont2 text-9xl absolute text-sky-600'>Is</span> <span className='font-textfont2 text-9xl absolute text-sky-600'>Isn't</span><span className='font-textfont2 text-9xl text-gray-200 ml-52'> Fraud</span></div>
 
-      <div className="loader absolute right-96 top-0 mt-80 ">
+      <div className="loader absolute right-96 top-0 mt-80 max-lg:top-72 max-lg:right-1/2 max-lg:mr-auto max-lg:ml-auto ">
     <div className="box box-1">
         <div className="side-left"></div>
         <div className="side-right"></div>

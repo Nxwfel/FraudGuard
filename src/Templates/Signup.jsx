@@ -26,7 +26,7 @@ const Signup = () => {
             minFontSize={36}
           />
         </div>
-        <div className='h-fit w-96 bg-transparent backdrop-blur-md border-2 border-zinc-600   mt-28 relative mr-auto ml-auto rounded-xl'>
+        <div className='h-fit w-96 bg-transparent backdrop-blur-md border-2 border-zinc-600  mt-16 relative mr-auto ml-auto rounded-xl'>
           <h1 className='font-textfont2 text-4xl text-white tracking-widest mt-5 text-center'>Signup</h1>
           
           <form>
@@ -48,7 +48,7 @@ const Signup = () => {
         </div>
         <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
     </div>
-    <button type="submit" class="text-white bg-blue-700 ml-32 mb-3 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    <button type="submit" class="text-white bg-blue-700 ml-32 mb-3 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full max-sm:w-24 sm:w-auto md:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 </form>
         </div>
       </div>
