@@ -27,9 +27,9 @@ const Page2 = () => {
                         delay={150}
                         animateBy="words"
                         direction="top"
-                        className="text-8xl font-textfont2 text-wrap text-center textalpha"
+                        className="text-8xl max-md:text-7xl font-textfont2 text-wrap text-center textalpha"
                     />
-                    <h1 className='text-8xl font-textfont2 text-wrap text-center textalpha'> <span className='text-sky-500 font-bold'>legal/illegal</span> Transactions</h1></motion.div>
+                    <h1 className='text-8xl max-md:text-7xl font-textfont2 text-wrap text-center textalpha'> <span className='text-sky-500 font-bold'>legal/illegal</span> Transactions</h1></motion.div>
                 <motion.div
                 initial={{opacity:0 , y:100}}
                 whileInView={{opacity:1 , y:0}}
@@ -41,12 +41,12 @@ const Page2 = () => {
                 initial={{opacity:0 , y:100}}
                 whileInView={{opacity:1 , y:0}}
                 transition={{duration:1.5}}
-                className='z-10 h-14 w-52 right-0 mt-5 justify-center items-center text-center backdrop-blur-sm shadow-md bg-white/5 p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><p className='text-center relative top-2 left-auto right-auto font-textfont text-sky-600'>Try it Now!</p></motion.div></a>
-                <a href=""><div className='relative h-14 w-80 right-auto left-auto mt-5 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 top-5 absolute' /> </div></a>
+                className='relative z-50 h-14 w-52 right-0 mt-5 justify-center items-center text-center backdrop-blur-sm shadow-md bg-white/5 p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><p className='text-center relative top-2 left-auto right-auto font-textfont text-sky-600'>Try it Now!</p></motion.div></a>
+                <a href=""><div className='relative z-50 h-14 w-80 right-auto left-auto mt-5 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute z-50 top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 top-5 absolute' /> </div></a>
                 </div></motion.div>
             </div>
                 <div className='flex flex-col w-screen h-fit justify-center items-center'>
-                    <h1 className='absolute font-textfont text-9xl blur-lg text-white left-auto right-auto bottom-11 cursor-default z-0 ' id='suite' >FraudGuard</h1>
+                    <h1 className='absolute font-textfont text-9xl max-md:6xl blur-lg text-white left-auto right-auto bottom-11 cursor-default z-0 ' id='suite' >FraudGuard</h1>
                 </div>
              <div className='absolute bottom-10 left-4'>
                 <TrueFocus 
