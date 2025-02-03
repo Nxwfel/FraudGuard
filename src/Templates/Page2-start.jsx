@@ -15,7 +15,7 @@ const Popup = () => {
     const element = document.getElementById('User-Page');
     if (element) {
         element.style.top = '8rem';
-        element.style.transition = '1s';
+        element.style.transition = '.3s';
     }
 }
 const Page2 = () => {
@@ -33,7 +33,7 @@ const Page2 = () => {
                 initial={{opacity:0 , y:-300}}
                 whileInView={{opacity:1 , y:0}}
                 transition={{duration:2}}
-                className='absolute top-32 left-1/3 w-96 h-3/5 rounded-lg bg-white z-50 items-center justify-center text-center'
+                className='absolute top-32 left-1/3 max-md:left-40 max-sm:left-14 w-96 h-3/5 rounded-lg bg-white z-50 items-center justify-center text-center'
                 id='User-Page'
                 >
                     <div className='absolute -top-32 left-36 ml-2 h-36 w-20 bg-sky-700'></div> <img src={Close} className='absolute h-6 w-6 left-3 top-3' onClick={hide} /><div className=' relative mr-auto ml-auto mt-8 h-24 w-24 rounded-full bg-black/30'></div><h1 className='text-sky-700 font-textfont mt-4'>Hi, Username</h1><h2 className='text-left ml-5 text-sky-700 font-textfont mt-4'>Recent Transactions:</h2> <ul className='flex flex-col gap-4'> <li className='text-sky-700 font-textfont mt-4 text-left pl-20 border-b-2 border-neutral-500'>Transaction1</li> <li className='text-sky-700 font-textfont mt-4 text-left pl-20 border-b-2 border-neutral-500'>Transaction2</li> <li className='text-sky-700 font-textfont mt-4 text-left pl-20 border-b-2 border-neutral-500'>Transaction3</li> </ul>
@@ -44,6 +44,7 @@ const Page2 = () => {
               transition={{duration:1.5}}
               className='absolute h-56 w-fit right-4 -mt-14  ml-auto flex justify-center items-center cursor-pointer'
               onClick={Popup}
+              role="button"
               >
                 <h1 className='mr-5 font-textfont text-white' > Hi, There</h1>
                 <div className='h-16 w-16 rounded-full bg-white cursor-pointer'></div>
