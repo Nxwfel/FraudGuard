@@ -4,9 +4,11 @@ import BlurText from "../Animation/BlurText";
 import TrueFocus from '../Animation/TrueFocus';
 import arrow from '../Images/arrow-right.png';
 import Header from '../Templates/Header'; 
+import Close from "../Images/close.png"
 import { motion } from 'framer-motion';
 const Popup = () => {
-    document.getElementById('popup').style.display = 'none';
+    document.getElementById('User-Page').style.top = '-700px';
+    document.getElementById('User-Page').style.transition = '1s';
 }
 const Page2 = () => {
     
@@ -22,7 +24,11 @@ const Page2 = () => {
                 initial={{opacity:0 , y:-300}}
                 whileInView={{opacity:1 , y:0}}
                 transition={{duration:2}}
-                className='absolute top-32 left-1/3 w-96 h-96 rounded-lg bg-white z-50'><div className='absolute -top-32 left-36 h-36 w-20 bg-sky-700'></div></motion.div>
+                className='absolute -top-96 left-1/3 w-96 h-3/5 rounded-lg bg-white z-50 items-center justify-center text-center'
+                id='User-Page'
+                >
+                    <div className='absolute -top-32 left-36 ml-2 h-36 w-20 bg-sky-700'></div> <img src={Close} className='absolute h-6 w-6 left-3 top-3' onClick={Popup} /><div className=' relative mr-auto ml-auto mt-8 h-24 w-24 rounded-full bg-black/30'></div><h1 className='text-sky-700 font-textfont mt-4'>Hi, Username</h1><h2 className='text-left ml-5 text-sky-700 font-textfont mt-4'>Recent Transactions:</h2> <ul className='flex flex-col gap-4'> <li className='text-sky-700 font-textfont mt-4 text-left pl-20 border-b-2 border-neutral-500'>Transaction1</li> <li className='text-sky-700 font-textfont mt-4 text-left pl-20 border-b-2 border-neutral-500'>Transaction2</li> <li className='text-sky-700 font-textfont mt-4 text-left pl-20 border-b-2 border-neutral-500'>Transaction3</li> </ul>
+                </motion.div>
             <div className='flex flex-col relative justify-center items-center text-center top-44 font-textfont text-gray-200 font-light'>
                 <motion.div
                 initial={{opacity:0 , y:-100}}
