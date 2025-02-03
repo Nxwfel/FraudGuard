@@ -5,6 +5,9 @@ import TrueFocus from '../Animation/TrueFocus';
 import arrow from '../Images/arrow-right.png';
 import Header from '../Templates/Header'; 
 import { motion } from 'framer-motion';
+const Popup = () => {
+    document.getElementById('popup').style.display = 'none';
+}
 const Page2 = () => {
     
     return (
@@ -15,6 +18,11 @@ const Page2 = () => {
     transition={{ duration: 1.3 }}> 
         <div className='background2 bg-background2 bg-cover bg-center h-screen w-screen'>
            <Header />
+           <motion.div
+                initial={{opacity:0 , y:-300}}
+                whileInView={{opacity:1 , y:0}}
+                transition={{duration:2}}
+                className='absolute top-32 left-1/3 w-96 h-96 rounded-lg bg-white z-50'><div className='absolute -top-32 left-36 h-36 w-20 bg-sky-700'></div></motion.div>
             <div className='flex flex-col relative justify-center items-center text-center top-44 font-textfont text-gray-200 font-light'>
                 <motion.div
                 initial={{opacity:0 , y:-100}}
@@ -41,8 +49,8 @@ const Page2 = () => {
                 initial={{opacity:0 , y:100}}
                 whileInView={{opacity:1 , y:0}}
                 transition={{duration:1.5}}
-                className='relative z-50 max-md:h-9 max-md:w-32 h-14 w-52 right-0 mt-5 justify-center items-center text-center backdrop-blur-sm shadow-md bg-white/5 p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><p className='text-center relative top-2 left-auto right-auto font-textfont text-sky-600 max-md:top-0 max-md:text-sky-300'>Try it Now!</p></motion.div></a>
-                <a href="#/Page1"><div className='relative z-50 max-md:h-11 max-md:w-62 h-14 w-80 right-auto left-auto mt-5 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute z-50 max-md:top-3 top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 max-md:top-4 top-5 absolute' /> </div></a>
+                className='relative z-40 max-md:h-9 max-md:w-32 h-14 w-52 right-0 mt-5 justify-center items-center text-center backdrop-blur-sm shadow-md bg-white/5 p-2 pr-5 pl-5 cursor-pointer rounded-full hover:scale-105 hover:transition-colors hover:bg-white'><p className='text-center relative top-2 left-auto right-auto font-textfont text-sky-600 max-md:top-0 max-md:text-sky-300'>Try it Now!</p></motion.div></a>
+                <a href="#/Page1"><div className='relative z-40 max-md:h-11 max-md:w-62 h-14 w-80 right-auto left-auto mt-5 backdrop-blur-sm shadow-md bg-white/5 rounded-xl hover:scale-105 transition-transform'><p className='text-center absolute z-50 max-md:top-3 top-4 left-10 text-white font-textfont'>Discover the new ai we made</p><img src={arrow} className='h-3 w-3 right-4 max-md:top-4 top-5 absolute' /> </div></a>
                 </div></motion.div>
             </div>
                 <div className='flex flex-col w-screen h-fit justify-center items-center'>
