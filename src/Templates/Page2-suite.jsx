@@ -23,8 +23,8 @@ const Page2Suite = () => {
         <option value="product-1">Cash-in</option>
         <option value="product-2">Cash-out</option>
         <option value="product-3">Debit</option>
-        <option value="product-3">Payments</option>
-        <option value="product-3">Transfer</option>
+        <option value="product-4">Payments</option>
+        <option value="product-5">Transfer</option>
       </select>
       <input placeholder="Sender Balance" className="font-textfont2 bg-white/5 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-white/5 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="number" />
       <input placeholder="Receiver Balance" className="font-textfont2 bg-white/5 text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-white/5 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150" type="number" />
